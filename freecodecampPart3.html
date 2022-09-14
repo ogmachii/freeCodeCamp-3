@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles3.css"/>
+    <title>Basic HTML Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Basic HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#HTML_Basics_and_Needs">HTML Basics and Needs</a></li>
+        <li><a class="nav-link" href="#A_Bare_Bones_HTML_Webpage">A Bare Bones HTML webpage</a></li>
+        <li><a class="nav-link" href="#Adding_Text">Adding Text</a></li>
+        <li><a class="nav-link" href="#Adding_Images_and_Links">Adding Images and Links</a></li>
+        <li><a class="nav-link" href="#Ordered_and_Unordered_Lists">Ordered and Unordered Lists</a></li>
+         <li><a class="nav-link" href="#There_is_More">There is More</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="HTML_Basics_and_Needs"class="main-section"> 
+        <header id="basicsHTML">HTML Basics and Needs</header>
+        <h2>The Basics:</h2>
+        <p>Below is a quick bullet point of the general idea of what HTML is and how it affects the end user experience with technology: </p>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language.</li>
+          <li>HTML is the standard markup language for creating Web pages, like this one!</li>
+          <li>HTML is the framework of a webpage, the backbone.</li>
+          <li>HTML is essentially a bunch of elements put together.</li>
+          <li>HTML elements tell the browser how to display content.</li>
+          <li>HTML elements describe what content the end user is seeing.</li>
+          <li>HTML elements are defined by a start tag, some content, and an end tag.</li>
+        </ul>
+        <h2>The Needs:</h2>
+        <p>The things you'll need to write HTML:</p>
+        <ol>
+          <li>A computer</li>
+          <li>A text editor i.e. Notepad (Windows), Notepad++, TextEdit (Mac)</li>
+          <li>Web Browser i.e. Google Chrome, Microsoft Edge (Windows), Safari (Mac)</li>
+        <ol>
+          <p>A computer is a crucial part to the whole process, storing the file, viewing the file, and writing it. A text editor allows one to easily write the file and save it, while the Web Browser allows one to view the file. With those three things anyone can create a web page!</p>
+      </section>
+      <section id="A_Bare_Bones_HTML_Webpage" class="main-section"> 
+        <header id="BareBonesHTML">A Bare Bones HTML Webpage</header>
+        <p>Every HTML webpage will start a little something like this:</p>
+        <code>&lt!DOCTYPE html&gt
+              &lthtml&gt
+              &#8195&lthead&gt
+              &#8195&lt/head&gt
+              &#8195&ltbody&gt
+              &#8195&lt/body&gt  
+              &lt/html&gt  
+        </code>
+        <p>To start with the first line, all HTML documents will start with "&lt!DOCTYPE html&gt" this is considered a document declaration.</p>
+        <p>The first element of the HTML document is our next line known as the HTML element. With the second line and last line of the page respectively, "&lthtml&gt","&lt/html&gt", our webpage is defined.</p>
+        <p>HTML metadata (<cite>Data that provides information about other data.</cite><sup><a href="https://www.merriam-webster.com/dictionary/metadata">*</a></sup> ) is defined within "&lthead&gt", "&lt/head&gt" known as the Head Element. This can be useful to tell the web browser the Character Encoding, Document title, a styling, and much more!</p>
+        <p>Lastly we have the Body element. Defined with the fifth and sixth lines, "&ltbody&gt", "&lt/body&gt" everything within this element will be showed to the user.</p>
+      </section>
+      <section id="Adding_Text" class="main-section">
+        <header id="textHTML">Adding Text</header>
+        <p>To add text to a webpage we will start with our bare bones layout:</p>
+         <code>&lt!DOCTYPE html&gt
+            &lthtml&gt
+            &#8195&lthead&gt
+            &#8195&lt/head&gt
+            &#8195&ltbody&gt
+            &#8195&lt/body&gt  
+            &lt/html&gt  
+        </code>
+        <p>Within the body element, the visble part of our webpage we will add a Paragraph tag as such:</p>
+         <code>&lt!DOCTYPE html&gt
+               &lthtml&gt
+               &#8195&lthead&gt
+               &#8195&lt/head&gt
+               &#8195&ltbody&gt
+               &#8195&#8195&ltp&gtText goes here!&lt/p&gt
+               &#8195&lt/body&gt  
+            &lt/html&gt  
+        </code> 
+        <p>That's all there is to it when it comes to adding simple text on a webpage. Adding the "&ltp&gt" with the following closer "&lt/p&gt" might not be enough. We can get a little <strong>bolder</strong> and <strong>larger</strong> with Heading elements.</p>
+         <code>&lt!DOCTYPE html&gt
+               &lthtml&gt
+               &#8195&lthead&gt
+               &#8195&lt/head&gt
+               &#8195&ltbody&gt
+               &#8195&#8195&lth1&gtA Simple Header&lt/h1&gt
+               &#8195&lt/body&gt  
+             &lt/html&gt  
+        </code>
+        <p>Heading elements are scaled 1-6. With "&lth1&gt", "&lt/h1&gt" being the largest of the set and "&lth6&gt", "&lt/h6&gt" being the smallest of the set.</p>
+      </section>
+      <section id="Adding_Images_and_Links" class="main-section">
+        <header id="tmpHead4">Adding Images and Links</header>
+        <p>All HTML elements can have "Attributes". They give additional information about the elements. They are always put in the starting tag of the element, below is an Anchor element:</p>
+        <code>&lt!DOCTYPE html&gt
+              &lthtml&gt
+              &#8195&lthead&gt
+              &#8195&lt/head&gt
+              &#8195&ltbody&gt
+              &#8195&#8195&lta href="https://www.google.com/"&gt Click me!&lt/a&gt
+              &#8195&lt/body&gt  
+            &lt/html&gt
+              </code>
+        <p>As we can see there is something different about this element the "href="https://www.google.com/"". This is considered the Attribute of the element. If "Click me!" is clicked it will send the user to the specified webaddress, in this case Google! The only thing visible to the end user is the text within the starting tag, &lta&gt, and the ending tag, &lt/a&gt, i.e. "Click me!"</p>
+        <p>Some elements are "Self closing" where they do not need an ending tag. Below we are introduced to an Image Tag:</p>
+        <code>&lt!DOCTYPE html&gt
+              &lthtml&gt
+              &#8195&lthead&gt
+              &#8195&lt/head&gt
+              &#8195&ltbody&gt
+              &#8195&#8195&ltimg src="https://tinyurl.com/22nyt6yw"/&gt
+              &#8195&lt/body&gt  
+              &lt/html&gt</code>
+              <p>Here we see the attribute is "src="https://tinyurl.com/22nyt6yw"" this url points to a specific image which is then displayed. Note that there is no content or ending tag, the entire element is defined within the starting tag, "&ltimg&gt".</p>
+      </section>
+      <section id="Ordered_and_Unordered_Lists" class="main-section">
+        <header id="tmpHead5">Ordered and Unordered Lists</header>
+        <p>Lists are a great way to organize a set of related items and HTML has an element for that! Let's start with a list that is sequential, known as an Ordered List element.</p>
+        <code>&lt!DOCTYPE html&gt
+              &lthtml&gt
+              &#8195&lthead&gt
+              &#8195&lt/head&gt
+              &#8195&ltbody&gt
+              &#8195&#8195&ltol&gt
+              &#8195&#8195&lt/ol&gt
+              &#8195&lt/body&gt  
+              &lt/html&gt</code>
+        <p>To insert an item into the list we'll use a List Item element:</p> 
+        <code>&lt!DOCTYPE html&gt
+              &lthtml&gt
+              &#8195&lthead&gt
+              &#8195&lt/head&gt
+              &#8195&ltbody&gt
+              &#8195&#8195&ltol&gt
+              &#8195&#8195&#8195&ltli&gtFirst Item&ltli&gt
+              &#8195&#8195&#8195&ltli&gtSecond Item&ltli&gt
+              &#8195&#8195&#8195&ltli&gtThird Item&ltli&gt
+              &#8195&#8195&lt/ol&gt
+              &#8195&lt/body&gt  
+            &lt/html&gt
+          </code>
+      <p>The List Item element "&ltli&gt","&lt/li&gt" also works for Unordered Lists as well. For Unordered List elements we'll use the starting and ending tag "&ltul&gt", "&lt/ul&gt" respectively.</p>
+      <code>&lt!DOCTYPE html&gt
+            &lthtml&gt
+            &#8195&lthead&gt
+            &#8195&lt/head&gt
+            &#8195&ltbody&gt
+            &#8195&#8195&ltul&gt
+            &#8195&#8195&#8195&ltli&gtItem&ltli&gt
+            &#8195&#8195&#8195&ltli&gtItem&ltli&gt
+            &#8195&#8195&#8195&ltli&gtItem&ltli&gt
+            &#8195&#8195&lt/ul&gt
+            &#8195&lt/body&gt  
+            &lt/html&gt
+          </code>
+      <p>Ordered List elements and Unordered List elements make up the entirety of lists in HTML.</p>
+      </section>
+      <section id="There_is_More" class="main-section">
+        <header id="tmpHead6">There is More</header>
+        <p>This is not a comprehensive documentation of HTML but more of a rough introductory to webpage development. We could go over Table elements, Semantic Elements, Styling options, Accessibility Standards, and so much more. If this quick documentation peaked your interest, I'd highly recommend continuing with <a href="https://www.freecodecamp.org">freecodecamp</a>!</p>
+      </section>
+      <footer id="credit"><h3>Foot notes:</h3>
+   To be transparent, alot of the information, format, and flow was adopted from <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>, this is a great resource for web development and they helped me make this. W3Schools provides clear and concise information for the HTML language as well as many other coding languages. - C.</footer>
+    </main>
+  </body>
+</html>
